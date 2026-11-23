@@ -6,8 +6,9 @@ const PROFILE = {
 
 const linkedinLink = document.getElementById("linkedinLink");
 const emailLink = document.getElementById("emailLink");
-linkedinLink.href = https://www.linkedin.com/in/f-uddin-75b35218/;
-emailLink.href = `mailto:${Foize.Uddin@colorado.edu}`;
+
+linkedinLink.href = PROFILE.linkedin;
+emailLink.href = `mailto:${PROFILE.email}`;
 
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
