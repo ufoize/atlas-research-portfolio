@@ -5,542 +5,429 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Research portfolio and statement of purpose for the ATLAS PhD program at the University of Colorado Boulder.">
+  <meta
+    name="description"
+    content="ATLAS — Academic research portfolio and PhD application profile."
+  >
 
-  <meta name="author" content="Foize Uddin">
+  <title>ATLAS | PhD Research Portfolio</title>
 
-  <title>Research Portfolio | ATLAS PhD</title>
-
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Main JavaScript -->
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-  <!-- Reading Progress -->
-  <div class="progress-track">
-    <div class="progress-bar" id="progressBar"></div>
-  </div>
+  <!-- Reading progress indicator -->
+  <div class="reading-progress" id="readingProgress"></div>
 
-  <!-- Header Navigation -->
+  <!-- Header -->
   <header class="site-header">
+    <div class="container header-inner">
 
-    <a class="brand" href="#home" aria-label="Research portfolio home">
-      <span class="brand-mark">R</span>
-      <span>RESEARCH PORTFOLIO</span>
-    </a>
+      <a href="#home" class="logo" aria-label="ATLAS home">
+        ATLAS<span>.</span>
+      </a>
 
-    <button
-      class="menu-toggle"
-      id="menuToggle"
-      type="button"
-      aria-label="Open navigation"
-      aria-expanded="false"
-      aria-controls="mainNav">
-      ☰
-    </button>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <nav class="nav" id="mainNav" aria-label="Main navigation">
-      <a href="#overview">Overview</a>
-      <a href="#interests">Research</a>
-      <a href="#collaboration">ATLAS fit</a>
-      <a href="#preparation">Background</a>
-      <a href="#inspiration">Inspiration</a>
-    </nav>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#methods">Methods</a>
+        <a href="#faculty">Faculty Fit</a>
+        <a href="#background">Background</a>
+        <a href="#statement">Statement</a>
+        <a href="#contact" class="nav-contact">Contact</a>
+      </nav>
 
-    <a class="header-cta" href="#statement">
-      Read my SOP <span>↗</span>
-    </a>
-
+    </div>
   </header>
+
 
   <main>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
 
-      <div class="hero-orbit orbit-one"></div>
-      <div class="hero-orbit orbit-two"></div>
+        <div class="hero-content">
+          <p class="eyebrow">ACADEMIC RESEARCH PORTFOLIO</p>
 
-      <div class="hero-content">
+          <h1>
+            Exploring questions.
+            <span>Building knowledge.</span>
+          </h1>
 
-        <p class="eyebrow">
-          <span class="eyebrow-line"></span>
-          ATLAS PhD · UNIVERSITY OF COLORADO BOULDER
-        </p>
-
-        <h1>
-          Designing the<br>
-          <em>future of learning</em><br>
-          through physics, creativity & AI.
-        </h1>
-
-        <p class="hero-lede">
-          An interdisciplinary research vision at the intersection of
-          Physics Education Research, computational creativity, and
-          human-centered educational technology.
-        </p>
-
-        <div class="hero-actions">
-          <a class="button button-light" href="#interests">
-            Explore my research <span>↓</span>
-          </a>
-
-          <a class="text-link" href="#statement">
-            Statement of Purpose <span>↗</span>
-          </a>
-        </div>
-
-      </div>
-
-      <div class="hero-side-note">
-        <span class="side-rule"></span>
-        <span>
-          RESEARCH VISION<br>
-          HUMAN-CENTERED INNOVATION
-        </span>
-      </div>
-
-      <div class="hero-bottom">
-        <span>PHYSICS EDUCATION RESEARCH</span>
-        <span class="hero-bottom-center">COMPUTATIONAL CREATIVITY</span>
-        <span>AI & EMERGING TECHNOLOGIES</span>
-      </div>
-
-    </section>
-
-    <!-- Research Overview -->
-    <section class="intro section-wrap" id="overview">
-
-      <div class="section-kicker">01 / RESEARCH OVERVIEW</div>
-
-      <div class="intro-grid">
-
-        <h2>
-          Technology should<br>
-          expand <em>human potential.</em>
-        </h2>
-
-        <div class="intro-copy">
-
-          <p class="large-copy">
-            I aim to advance evidence-based, human-centered Physics
-            Education Research by integrating scientific inquiry,
-            computational creativity, and technological innovation.
+          <p class="hero-description">
+            An academic portfolio presenting my research interests,
+            intellectual background, methodological approach, and
+            aspirations for doctoral study.
           </p>
 
-          <p>
-            My work is motivated by a central question: how can emerging
-            technologies help learners develop deeper conceptual
-            understanding, independent scientific reasoning, creativity,
-            and intellectual agency?
-          </p>
+          <div class="hero-actions">
+            <a href="#research" class="button button-primary">
+              Explore my research
+            </a>
 
-          <div class="keyword-row">
-            <span>Conceptual understanding</span>
-            <span>Scientific reasoning</span>
-            <span>Student agency</span>
-            <span>Learning technologies</span>
+            <a href="#contact" class="button button-secondary">
+              Get in touch
+            </a>
           </div>
 
+          <div class="hero-meta">
+            <span>PhD Research Applicant</span>
+            <span class="meta-divider">/</span>
+            <span>Academic Profile</span>
+          </div>
         </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <span class="card-label">RESEARCH PROFILE</span>
+              <span class="card-number">01 — 08</span>
+            </div>
+
+            <div class="hero-art">
+              <div class="art-circle circle-one"></div>
+              <div class="art-circle circle-two"></div>
+              <div class="art-line"></div>
+              <span class="art-caption">Inquiry · Analysis · Discovery</span>
+            </div>
+
+            <div class="hero-card-bottom">
+              <span>ATLAS</span>
+              <span>RESEARCH &amp; ACADEMIA</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Research Interests -->
-    <section class="research-section" id="interests">
 
-      <div class="section-wrap">
-
-        <div class="section-kicker light-kicker">
-          02 / RESEARCH INTERESTS
-        </div>
+    <!-- Research overview -->
+    <section class="section research-section" id="research">
+      <div class="container">
 
         <div class="section-heading">
-
-          <h2>
-            Questions that<br>
-            <em>move my research.</em>
-          </h2>
-
+          <p class="eyebrow">01 / RESEARCH OVERVIEW</p>
+          <h2>Questions that shape my research.</h2>
           <p>
-            Three interconnected questions guide my proposed doctoral
-            inquiry and shape the interdisciplinary approach I hope
-            to develop at ATLAS.
+            My academic interests are driven by a desire to understand
+            complex issues, investigate meaningful questions, and
+            contribute to the development of knowledge in my field.
           </p>
-
         </div>
 
-        <div class="question-list">
+        <div class="research-grid">
 
-          <article class="question-card">
-            <span class="question-number">01</span>
-
-            <div>
-              <h3>How can physics education cultivate deep understanding?</h3>
-              <p>
-                How can learning experiences develop scientific reasoning,
-                critical discernment, creativity, metacognition, and
-                intellectual independence in an era when AI increasingly
-                performs tasks traditionally associated with human cognition?
-              </p>
-            </div>
-
-            <span class="question-icon">↗</span>
+          <article class="research-card">
+            <span class="card-index">01</span>
+            <h3>Research Focus</h3>
+            <p>
+              Describe your primary research topic, the central problem
+              you want to investigate, and why it matters academically
+              or socially.
+            </p>
           </article>
 
-          <article class="question-card">
-            <span class="question-number">02</span>
-
-            <div>
-              <h3>How can emerging technologies strengthen learner agency?</h3>
-              <p>
-                How can AI and interactive technologies transform teaching,
-                learning, and assessment while strengthening independent
-                reasoning, educator expertise, ethical judgment, and
-                meaningful human relationships?
-              </p>
-            </div>
-
-            <span class="question-icon">↗</span>
+          <article class="research-card">
+            <span class="card-index">02</span>
+            <h3>Research Problem</h3>
+            <p>
+              Explain the gap, challenge, or unresolved question that
+              motivates your proposed doctoral research.
+            </p>
           </article>
 
-          <article class="question-card">
-            <span class="question-number">03</span>
-
-            <div>
-              <h3>How should universities rethink education for an AI-driven world?</h3>
-              <p>
-                How must educational philosophies, curricula, learning
-                environments, and assessment evolve to prepare people
-                not only for work, but to shape a more creative,
-                democratic, ethical, and humane society?
-              </p>
-            </div>
-
-            <span class="question-icon">↗</span>
+          <article class="research-card">
+            <span class="card-index">03</span>
+            <h3>Research Contribution</h3>
+            <p>
+              Outline the potential contribution of your work to
+              existing scholarship, policy, professional practice,
+              or wider society.
+            </p>
           </article>
 
         </div>
 
-        <div class="interdisciplinary">
+      </div>
+    </section>
 
-          <p class="micro-label">AN INTERDISCIPLINARY FOUNDATION</p>
 
-          <div class="discipline-grid">
+    <!-- Research interests -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
 
-            <div>
+        <div class="section-heading">
+          <p class="eyebrow">02 / RESEARCH INTERESTS</p>
+          <h2>Areas of intellectual curiosity.</h2>
+        </div>
+
+        <div class="interests-layout">
+
+          <div class="interests-intro">
+            <p>
+              My research interests sit at the intersection of
+              established academic debates and emerging questions
+              within my discipline.
+            </p>
+          </div>
+
+          <div class="interest-list">
+            <div class="interest-item">
               <span>01</span>
-              <h4>Physics</h4>
-              <p>Scientific concepts and physical phenomena</p>
+              <h3>Primary Research Area</h3>
+              <p>Insert your principal academic interest.</p>
             </div>
 
-            <div>
+            <div class="interest-item">
               <span>02</span>
-              <h4>Learning sciences</h4>
-              <p>Mental models, cognition, and understanding</p>
+              <h3>Secondary Research Area</h3>
+              <p>Insert a related research theme.</p>
             </div>
 
-            <div>
+            <div class="interest-item">
               <span>03</span>
-              <h4>Computing & engineering</h4>
-              <p>Simulations and intelligent learning systems</p>
+              <h3>Interdisciplinary Perspectives</h3>
+              <p>Identify relevant connections with other disciplines.</p>
             </div>
 
-            <div>
+            <div class="interest-item">
               <span>04</span>
-              <h4>Design & humanities</h4>
-              <p>Creativity, accessibility, and human experience</p>
+              <h3>Emerging Research Questions</h3>
+              <p>Describe new developments that interest you.</p>
             </div>
-
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
 
-    <!-- Research Directions -->
-    <section class="methods section-wrap">
 
-      <div class="section-kicker">03 / POSSIBLE RESEARCH DIRECTIONS</div>
-
-      <div class="methods-grid">
-
-        <div>
-          <p class="micro-label">FROM ABSTRACT TO EXPERIENTIAL</p>
-          <h2>
-            Make complex<br>
-            physics <em>visible.</em>
-          </h2>
-        </div>
-
-        <div class="methods-copy">
-
-          <p>
-            I am interested in designing and evaluating learning
-            environments in which students can manipulate physical
-            parameters, visualize abstract phenomena, formulate hypotheses,
-            evaluate predictions, and refine their conceptual understanding
-            through experimentation.
-          </p>
-
-          <p>
-            Rather than simply delivering information, these environments
-            should invite learners to investigate, question, create,
-            and reason independently.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="method-cards">
-
-        <article class="method-card">
-          <div class="method-symbol">◉</div>
-          <h3>Interactive simulations</h3>
-          <p>
-            Explore physical systems by changing variables and observing outcomes.
-          </p>
-          <span>01 — EXPERIMENTATION</span>
-        </article>
-
-        <article class="method-card">
-          <div class="method-symbol">⌘</div>
-          <h3>AI-enabled learning</h3>
-          <p>
-            Investigate how intelligent tools can support reflection
-            without replacing student thinking.
-          </p>
-          <span>02 — HUMAN AGENCY</span>
-        </article>
-
-        <article class="method-card">
-          <div class="method-symbol">◇</div>
-          <h3>Tangible & mixed reality</h3>
-          <p>
-            Connect mathematical representations with physical
-            and embodied experiences.
-          </p>
-          <span>03 — INTERACTION</span>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ATLAS Faculty Fit -->
-    <section class="atlas-section" id="collaboration">
-
-      <div class="section-wrap">
-
-        <div class="section-kicker light-kicker">
-          04 / TENTATIVE PROGRAM OF STUDY
-        </div>
+    <!-- Methods -->
+    <section class="section methods-section" id="methods">
+      <div class="container">
 
         <div class="section-heading">
-
-          <h2>
-            A collaborative<br>
-            <em>research environment.</em>
-          </h2>
-
+          <p class="eyebrow">03 / METHODOLOGICAL APPROACH</p>
+          <h2>How I approach research.</h2>
           <p>
-            The ATLAS community offers an interdisciplinary context in
-            which physics education, design, computing, and human-centered
-            innovation can inform one another.
+            Rigorous research requires a clear relationship between
+            the research question, theoretical framework, evidence,
+            and analytical approach.
           </p>
-
         </div>
 
-        <div class="faculty-grid">
+        <div class="methods-grid">
 
-          <article class="faculty-card">
-            <span class="faculty-area">PHYSICS EDUCATION RESEARCH</span>
-            <h3>Professor Noah<br>Finkelstein</h3>
+          <article class="method-card">
+            <span class="method-number">01</span>
+            <h3>Research Design</h3>
             <p>
-              Research in Physics Education Research, student engagement,
-              and educational transformation aligns with my interests
-              in conceptual understanding and meaningful physics learning.
+              Describe the research design you intend to use and
+              explain why it is appropriate for your research question.
             </p>
-            <span class="faculty-index">01</span>
           </article>
 
-          <article class="faculty-card">
-            <span class="faculty-area">COMPUTATIONAL CREATIVITY & DESIGN</span>
-            <h3>Professor Ellen<br>Yi-Luen Do</h3>
+          <article class="method-card">
+            <span class="method-number">02</span>
+            <h3>Data Collection</h3>
             <p>
-              Work in computational creativity, design cognition,
-              tangible interaction, and creative technologies through
-              the ACME Lab offers valuable perspectives for
-              technology-enriched learning.
+              Identify relevant sources of evidence, participants,
+              datasets, archives, or fieldwork methods.
             </p>
-            <span class="faculty-index">02</span>
           </article>
 
-          <article class="faculty-card">
-            <span class="faculty-area">INTELLIGENT DESIGN SYSTEMS</span>
-            <h3>Professor Mark<br>D. Gross</h3>
+          <article class="method-card">
+            <span class="method-number">03</span>
+            <h3>Data Analysis</h3>
             <p>
-              Research in intelligent design systems, virtual environments,
-              tangible interaction, and digital fabrication complements
-              my interest in interactive learning environments.
+              Explain the analytical techniques and interpretive
+              frameworks relevant to your proposed study.
             </p>
-            <span class="faculty-index">03</span>
+          </article>
+
+          <article class="method-card">
+            <span class="method-number">04</span>
+            <h3>Research Ethics</h3>
+            <p>
+              Address ethical considerations, research integrity,
+              transparency, and responsible data management.
+            </p>
           </article>
 
         </div>
-
-        <p class="faculty-note">
-          Faculty interests are presented as potential areas of intellectual
-          alignment; collaboration and advising are subject to faculty
-          availability and program fit.
-        </p>
 
       </div>
     </section>
 
-    <!-- Long-Term Goals -->
-    <section class="goals section-wrap">
 
-      <div class="section-kicker">05 / LONG-TERM GOALS</div>
+    <!-- Faculty fit -->
+    <section class="section faculty-section" id="faculty">
+      <div class="container faculty-layout">
 
-      <div class="goals-grid">
+        <div class="faculty-heading">
+          <p class="eyebrow">04 / ACADEMIC ALIGNMENT</p>
+          <h2>Finding the right research environment.</h2>
+        </div>
 
-        <h2>
-          Research that<br>
-          opens new ways<br>
-          to <em>understand.</em>
-        </h2>
-
-        <div>
-
-          <p class="large-copy">
-            My long-term goal is to become an interdisciplinary researcher
-            and educator advancing Physics Education Research through
-            computational creativity and emerging technologies.
-          </p>
-
+        <div class="faculty-content">
           <p>
-            I aspire to design and rigorously evaluate evidence-based
-            learning environments that integrate AI, interactive
-            simulations, and mixed-reality technologies to deepen
-            conceptual understanding and strengthen independent
-            scientific reasoning.
+            Doctoral research develops through intellectual exchange,
+            scholarly guidance, and engagement with an active academic
+            community.
           </p>
 
-          <p>
-            Through an academic or research career, I hope to lead
-            collaborative projects that create opportunities for
-            scientific discovery, experimentation, creativity,
-            and intellectual growth.
-          </p>
+          <div class="faculty-detail">
+            <span class="detail-label">TARGET UNIVERSITY</span>
+            <h3>[University Name]</h3>
+            <p>
+              Explain why this institution is a strong environment
+              for your proposed doctoral research.
+            </p>
+          </div>
+
+          <div class="faculty-detail">
+            <span class="detail-label">POTENTIAL SUPERVISOR</span>
+            <h3>[Faculty Member Name]</h3>
+            <p>
+              Identify relevant faculty research, publications,
+              theoretical perspectives, or methodological expertise
+              that align with your interests.
+            </p>
+          </div>
+
+          <div class="faculty-detail">
+            <span class="detail-label">RESEARCH ENVIRONMENT</span>
+            <h3>[Department / Research Centre]</h3>
+            <p>
+              Describe the academic resources, research groups,
+              facilities, or collaborative opportunities that
+              would support your work.
+            </p>
+          </div>
 
         </div>
       </div>
-
-      <div class="goal-statement">
-        <span>THE BROADER AMBITION</span>
-        <p>
-          To help shape an educational future in which technology expands
-          human intellectual potential, strengthens learner agency,
-          and cultivates the critical thinking and creativity essential
-          to a more innovative and humane society.
-        </p>
-      </div>
-
     </section>
 
-    <!-- Background and Preparation -->
-    <section class="background-section" id="preparation">
 
-      <div class="section-wrap">
-
-        <div class="section-kicker light-kicker">
-          06 / BACKGROUND & PREPARATION
-        </div>
+    <!-- Research goals -->
+    <section class="section goals-section" id="goals">
+      <div class="container">
 
         <div class="section-heading">
+          <p class="eyebrow">05 / DOCTORAL RESEARCH GOALS</p>
+          <h2>From research questions to meaningful outcomes.</h2>
+        </div>
 
-          <h2>
-            A foundation across<br>
-            <em>disciplines and practice.</em>
-          </h2>
+        <div class="goals-grid">
 
-          <p>
-            My academic and professional experiences have shaped a
-            perspective that connects scientific inquiry, quantitative
-            reasoning, and complex technological systems.
-          </p>
+          <div class="goal-item">
+            <span>01</span>
+            <h3>Develop</h3>
+            <p>
+              Build a rigorous theoretical and conceptual foundation
+              for the proposed research.
+            </p>
+          </div>
 
+          <div class="goal-item">
+            <span>02</span>
+            <h3>Investigate</h3>
+            <p>
+              Conduct systematic research using appropriate
+              methodological and analytical approaches.
+            </p>
+          </div>
+
+          <div class="goal-item">
+            <span>03</span>
+            <h3>Contribute</h3>
+            <p>
+              Produce original findings that advance scholarly
+              understanding and support further inquiry.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Background -->
+    <section class="section background-section" id="background">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">06 / ACADEMIC BACKGROUND</p>
+          <h2>The foundations of my academic journey.</h2>
         </div>
 
         <div class="timeline">
 
           <article class="timeline-item">
-            <span class="timeline-point"></span>
-            <div class="timeline-date">ACADEMIC FOUNDATION</div>
-            <div>
-              <h3>Physics & Mathematics</h3>
+            <div class="timeline-date">YEAR – YEAR</div>
+            <div class="timeline-content">
+              <h3>[Degree / Qualification]</h3>
+              <p class="timeline-institution">
+                [University or Institution]
+              </p>
               <p>
-                Built a foundation in mathematical reasoning, scientific
-                inquiry, quantitative analysis, and problem-solving.
-                These disciplines sparked my interest in how learners
-                connect mathematical abstractions with physical concepts.
+                Summarise your academic training, relevant coursework,
+                dissertation, research experience, and achievements.
               </p>
             </div>
           </article>
 
           <article class="timeline-item">
-            <span class="timeline-point"></span>
-            <div class="timeline-date">RESEARCH EXPERIENCE</div>
-            <div>
-              <h3>Research Assistant</h3>
+            <div class="timeline-date">YEAR – YEAR</div>
+            <div class="timeline-content">
+              <h3>[Degree / Qualification]</h3>
+              <p class="timeline-institution">
+                [University or Institution]
+              </p>
               <p>
-                Developed experience in academic literature reviews,
-                research data collection, and analytical documentation.
+                Describe the academic experience and skills that
+                prepared you for advanced research.
               </p>
             </div>
           </article>
 
           <article class="timeline-item">
-            <span class="timeline-point"></span>
-            <div class="timeline-date">PROFESSIONAL EXPERIENCE</div>
-            <div>
-              <h3>Cybersecurity, IT & Financial Systems</h3>
-              <p>
-                Worked in India and Japan, strengthening computational
-                problem-solving, data integrity, and experience with
-                the design and management of complex technological systems.
+            <div class="timeline-date">YEAR – PRESENT</div>
+            <div class="timeline-content">
+              <h3>[Professional or Research Experience]</h3>
+              <p class="timeline-institution">
+                [Organisation / Institution]
               </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-point"></span>
-            <div class="timeline-date">MAY 2026</div>
-            <div>
-              <h3>Master of Engineering, Engineering Management</h3>
               <p>
-                Completed the degree at the University of Colorado Boulder,
-                extending my interdisciplinary foundation in engineering
-                and management.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-point"></span>
-            <div class="timeline-date">CONTINUING DEVELOPMENT</div>
-            <div>
-              <h3>Programming & AI</h3>
-              <p>
-                Programming experience and the Google AI Professional
-                Certificate expanded my understanding of computational
-                methods and potential AI applications in educational
-                research and assessment.
+                Highlight relevant professional responsibilities,
+                research projects, publications, or collaborations.
               </p>
             </div>
           </article>
@@ -549,520 +436,211 @@
       </div>
     </section>
 
-    <!-- Research Inspiration -->
-    <section class="inspiration section-wrap" id="inspiration">
 
-      <div class="section-kicker">07 / RESEARCH THAT INSPIRES ME</div>
+    <!-- Inspiration -->
+    <section class="section inspiration-section" id="inspiration">
+      <div class="container inspiration-content">
 
-      <div class="inspiration-grid">
+        <p class="eyebrow">07 / RESEARCH PHILOSOPHY</p>
 
-        <div>
+        <blockquote>
+          "The pursuit of knowledge begins with the willingness
+          to question what we think we know."
+        </blockquote>
 
-          <p class="micro-label">
-            DESIGN-BASED & INTERDISCIPLINARY LEARNING
-          </p>
+        <p class="inspiration-note">
+          A personal statement about the values, ideas, and
+          intellectual motivations that guide your academic work.
+        </p>
 
-          <h2>
-            Learning through<br>
-            <em>making and inquiry.</em>
-          </h2>
-
-          <div class="publication">
-
-            <span class="publication-label">
-              RESEARCH ARTICLE · 2026
-            </span>
-
-            <h3>
-              “Fabrication of a Physical Circuitry Activity Booklet
-              for English Instruction”
-            </h3>
-
-            <p>
-              Sasha Novack, Noah Finkelstein, and Ellen Yi-Luen Do ·
-              <em>Design+</em>
-            </p>
-
-          </div>
-        </div>
-
-        <div class="inspiration-copy">
-
-          <p>
-            This work particularly inspires me because it illustrates
-            how science, technology, and engineering can enrich humanities
-            education through tangible, interactive learning experiences.
-          </p>
-
-          <p>
-            I am especially interested in its integration of design-based
-            research, iterative prototyping, teacher collaboration,
-            and classroom evaluation to address authentic educational needs.
-          </p>
-
-          <p>
-            Although situated in English instruction, the study offers
-            methodological insights for Physics Education Research.
-            Similar approaches could use physical models, interactive
-            simulations, and intelligent learning environments to help
-            students visualize abstract phenomena, test predictions,
-            and develop deeper conceptual understanding.
-          </p>
-
-          <blockquote>
-            Thoughtful educational design can transform abstract concepts
-            into meaningful and engaging learning experiences.
-          </blockquote>
-
-        </div>
       </div>
     </section>
+
 
     <!-- Statement of Purpose -->
-    <section class="statement-section" id="statement">
+    <section class="section statement-section" id="statement">
+      <div class="container">
 
-      <div class="section-wrap statement-wrap">
-
-        <div class="section-kicker light-kicker">
-          08 / STATEMENT OF PURPOSE
+        <div class="section-heading">
+          <p class="eyebrow">08 / STATEMENT OF PURPOSE</p>
+          <h2>The motivation behind my doctoral application.</h2>
+          <p>
+            Explore the key themes of my academic motivation,
+            research preparation, and long-term aspirations.
+          </p>
         </div>
 
-        <div class="statement-top">
+        <div class="statement-accordion">
 
-          <h2>
-            A research vision<br>
-            for the <em>ATLAS PhD.</em>
-          </h2>
-
-          <div class="statement-actions">
-
-            <button
-              class="button button-light"
-              id="printButton"
-              type="button">
-              Print / Save as PDF ↗
-            </button>
-
-            <button
-              class="button button-outline"
-              id="expandButton"
-              type="button">
-              Expand all sections +
-            </button>
-
-          </div>
-        </div>
-
-        <div class="sop-accordion">
-
-          <!-- SOP Section 1 -->
-          <article class="sop-item open">
-
-            <button class="sop-trigger" type="button" aria-expanded="true">
-              <span>01</span>
-              <strong>Research Interests and Why They Demand Interdisciplinary Work</strong>
-              <span class="sop-plus">−</span>
-            </button>
-
-            <div class="sop-content">
-
+          <details class="statement-item">
+            <summary>
+              <span class="statement-index">01</span>
+              <span class="statement-title">Academic Motivation</span>
+              <span class="statement-icon">+</span>
+            </summary>
+            <div class="statement-body">
               <p>
-                My research interests focus on advancing Physics Education
-                Research (PER) through computational creativity and emerging
-                educational technologies. I am particularly interested in
-                investigating how students develop deep conceptual
-                understanding, construct and refine mental models, engage
-                in scientific reasoning, and cultivate creativity and
-                problem-solving abilities in physics. More specifically,
-                I seek to explore how interactive, computational, and
-                AI-enabled technologies can enhance students’ abilities
-                to visualize physical phenomena, connect mathematical
-                representations with real-world experiences, and engage
-                meaningfully in scientific inquiry.
+                Explain the experiences, questions, and intellectual
+                interests that motivated you to pursue doctoral study.
+                Describe how your academic interests developed over time.
               </p>
-
-              <p>
-                My research draws on the principles articulated in
-                Professor Noah D. Finkelstein’s
-                <em>A Principled Way to Think About AI in Education</em>
-                (2025) and his collaborative work with David Perl-Nussbaum,
-                <em>A Framework for Institutional Change in the Age of AI</em>
-                (2026). These works reinforce my commitment to ensuring
-                that technological innovation in education remains aligned
-                with meaningful learning objectives, the advancement of
-                human intellectual development, evidence-informed
-                pedagogical practices, and the preservation of student agency.
-              </p>
-
-              <p>Three interconnected questions motivate my proposed research:</p>
-
-              <ol>
-                <li>
-                  How can physics education cultivate deep conceptual
-                  understanding, scientific reasoning, critical discernment,
-                  creativity, metacognition, and intellectual independence
-                  in an era when AI increasingly performs tasks traditionally
-                  associated with human cognition?
-                </li>
-
-                <li>
-                  How can AI and emerging technologies transform physics
-                  teaching, learning, and assessment while strengthening,
-                  rather than diminishing, student agency, independent
-                  reasoning, educator expertise, ethical judgment, and
-                  meaningful human relationships?
-                </li>
-
-                <li>
-                  How must universities fundamentally rethink their
-                  educational philosophies, curricula, learning environments,
-                  and assessment practices to prepare future generations
-                  not merely to thrive in an AI-driven workforce, but also
-                  to shape a more creative, democratic, ethical, and humane society?
-                </li>
-              </ol>
-
-              <p>
-                Addressing these questions requires an interdisciplinary
-                research approach. Physics provides the disciplinary
-                foundations for understanding scientific concepts and
-                physical phenomena, while the learning sciences and
-                cognitive science offer insights into how students
-                construct mental models, process information, and develop
-                scientific understanding. Computer science and engineering
-                contribute computational methods for designing simulations,
-                interactive environments, and intelligent learning systems.
-                Meanwhile, design, human-computer interaction, and the
-                humanities provide essential perspectives on creativity,
-                human experience, accessibility, and ethical engagement
-                with emerging technologies.
-              </p>
-
-              <p>
-                I aim to advance evidence-based, human-centered Physics
-                Education Research by integrating scientific inquiry,
-                computational creativity, and technological innovation
-                to deepen conceptual understanding, foster independent
-                scientific reasoning, and expand human intellectual
-                potential in an increasingly AI-driven world.
-              </p>
-
             </div>
-          </article>
+          </details>
 
-          <!-- SOP Section 2 -->
-          <article class="sop-item">
-
-            <button class="sop-trigger" type="button" aria-expanded="false">
-              <span>02</span>
-              <strong>Tentative Program of Study and Faculty Collaboration</strong>
-              <span class="sop-plus">+</span>
-            </button>
-
-            <div class="sop-content">
-
+          <details class="statement-item">
+            <summary>
+              <span class="statement-index">02</span>
+              <span class="statement-title">Research Preparation</span>
+              <span class="statement-icon">+</span>
+            </summary>
+            <div class="statement-body">
               <p>
-                I am particularly interested in collaborating with
-                Professor Noah Finkelstein, whose research in Physics
-                Education Research, student engagement, and educational
-                transformation aligns closely with my interests in
-                conceptual understanding, scientific reasoning, and
-                human-centered physics learning. Professor Ellen Yi-Luen
-                Do’s work in computational creativity, design cognition,
-                tangible interaction, and creative technologies through
-                the ACME Lab provides a valuable foundation for exploring
-                how innovative design approaches and intelligent
-                technologies can enrich learning. Similarly, Professor
-                Mark D. Gross’s research in intelligent design systems,
-                virtual environments, tangible interaction, and digital
-                fabrication complements my interest in developing
-                interactive, technology-enhanced physics learning
-                environments. Their complementary expertise offers
-                an exciting interdisciplinary foundation for advancing
-                physics education through design, computing, and
-                educational research.
+                Describe your previous research projects, academic
+                training, relevant skills, publications, and experiences
+                that demonstrate your readiness for doctoral research.
               </p>
-
-              <p>
-                Through interdisciplinary coursework and collaborative
-                research, I aim to investigate how artificial intelligence
-                (AI), interactive simulations, tangible interfaces, and
-                mixed-reality technologies can deepen physics learning.
-                Specifically, I am interested in designing and evaluating
-                environments where students manipulate physical parameters,
-                visualize abstract phenomena, formulate hypotheses,
-                evaluate predictions, and refine conceptual understanding
-                through experimentation. Beyond improving access to
-                information, I seek to examine how these technologies
-                foster independent reasoning, creativity, and critical
-                thinking. Equally important is understanding how
-                computational technologies can complement educators'
-                expertise, accommodate diverse learning processes,
-                and preserve student agency in scientific inquiry.
-                I aspire to develop human-centered technological
-                innovations that make physics learning more engaging,
-                meaningful, and intellectually enriching while nurturing
-                the curiosity and independent inquiry essential to
-                scientific discovery.
-              </p>
-
             </div>
-          </article>
+          </details>
 
-          <!-- SOP Section 3 -->
-          <article class="sop-item">
-
-            <button class="sop-trigger" type="button" aria-expanded="false">
-              <span>03</span>
-              <strong>Longer-Term Goals</strong>
-              <span class="sop-plus">+</span>
-            </button>
-
-            <div class="sop-content">
-
+          <details class="statement-item">
+            <summary>
+              <span class="statement-index">03</span>
+              <span class="statement-title">Proposed Research Direction</span>
+              <span class="statement-icon">+</span>
+            </summary>
+            <div class="statement-body">
               <p>
-                My long-term goal is to become an interdisciplinary
-                researcher and educator advancing Physics Education
-                Research through computational creativity and emerging
-                technologies. I aspire to design and evaluate innovative,
-                evidence-based learning environments that integrate AI,
-                interactive simulations, and mixed-reality technologies
-                to deepen conceptual understanding, foster engagement
-                with complex scientific phenomena, and strengthen students’
-                capacity for independent scientific reasoning and
-                creative problem-solving.
+                Introduce your proposed research topic, its significance,
+                the questions you hope to investigate, and the contribution
+                you aim to make.
               </p>
-
-              <p>
-                The ATLAS PhD offers the interdisciplinary research
-                environment, mentorship, and collaborative opportunities
-                across physics, education, computer science, engineering,
-                design, and the humanities essential to pursuing this
-                vision. Through this program, I aim to develop the
-                theoretical, methodological, and technological expertise
-                needed to conceptualize, design, implement, and rigorously
-                evaluate human-centered educational innovations.
-              </p>
-
-              <p>
-                I aspire to pursue an academic or research career,
-                leading interdisciplinary projects that advance physics
-                education and technology-enhanced learning. I seek to
-                ensure that technological innovation does more than
-                automate existing educational practices by creating
-                new opportunities for scientific discovery,
-                experimentation, creativity, and intellectual growth.
-                My broader ambition is to help shape an educational
-                future in which emerging technologies expand human
-                intellectual potential, strengthen learner agency,
-                and cultivate the critical thinking, creativity,
-                and lifelong learning essential to a more innovative
-                and humane society.
-              </p>
-
             </div>
-          </article>
+          </details>
 
-          <!-- SOP Section 4 -->
-          <article class="sop-item">
-
-            <button class="sop-trigger" type="button" aria-expanded="false">
-              <span>04</span>
-              <strong>Background and Preparation</strong>
-              <span class="sop-plus">+</span>
-            </button>
-
-            <div class="sop-content">
-
+          <details class="statement-item">
+            <summary>
+              <span class="statement-index">04</span>
+              <span class="statement-title">Why This University</span>
+              <span class="statement-icon">+</span>
+            </summary>
+            <div class="statement-body">
               <p>
-                My academic background in Physics and Mathematics
-                provided a solid foundation in mathematical reasoning,
-                scientific inquiry, quantitative analysis, and
-                problem-solving. These disciplines also sparked my
-                interest in understanding how students translate
-                mathematical abstractions into meaningful physical
-                concepts and develop deeper scientific understanding.
+                Explain why the university, department, potential
+                supervisor, and research environment are appropriate
+                for your doctoral development.
               </p>
-
-              <p>
-                Following my undergraduate studies, I worked as a
-                Research Assistant, gaining experience in academic
-                literature reviews, research data collection, and
-                analytical documentation. I subsequently developed
-                professional experience in cybersecurity, information
-                technology, and financial systems in India and Japan,
-                strengthening my expertise in computational
-                problem-solving, data integrity, and the design and
-                management of complex technological systems.
-              </p>
-
-              <p>
-                In May 2026, I completed a Master of Engineering in
-                Engineering Management at the University of Colorado
-                Boulder. My programming experience and completion of
-                the Google AI Professional Certificate further expanded
-                my understanding of computational methods and artificial
-                intelligence, particularly their potential applications
-                in educational research, learning technologies, and assessment.
-              </p>
-
-              <p>
-                Together, these academic and professional experiences
-                provide a strong interdisciplinary foundation for
-                doctoral study at ATLAS. I aim to build upon my
-                background in physics, mathematics, engineering,
-                and information technology while deepening my expertise
-                in the learning sciences, computational creativity,
-                human-computer interaction, and AI-driven educational
-                technologies. By integrating these complementary
-                perspectives, I hope to investigate, design, and
-                evaluate innovative approaches that advance Physics
-                Education Research and create more engaging, effective,
-                and intellectually enriching learning experiences.
-              </p>
-
             </div>
-          </article>
+          </details>
 
-          <!-- SOP Section 5 -->
-          <article class="sop-item">
-
-            <button class="sop-trigger" type="button" aria-expanded="false">
-              <span>05</span>
-              <strong>Research Work That Inspires Me</strong>
-              <span class="sop-plus">+</span>
-            </button>
-
-            <div class="sop-content">
-
+          <details class="statement-item">
+            <summary>
+              <span class="statement-index">05</span>
+              <span class="statement-title">Future Aspirations</span>
+              <span class="statement-icon">+</span>
+            </summary>
+            <div class="statement-body">
               <p>
-                One research work that particularly inspires my
-                academic aspirations is Sasha Novack, Noah Finkelstein,
-                and Ellen Yi-Luen Do’s (2026) article,
-                <em>Fabrication of a Physical Circuitry Activity Booklet
-                for English Instruction</em>, published in
-                <em>Design+</em>.
+                Outline your long-term academic and professional goals
+                and explain how doctoral study will help you achieve them.
               </p>
-
-              <p>
-                Its interdisciplinary approach illustrates how science,
-                technology, and engineering can enrich humanities
-                education through the design and fabrication of
-                tangible, interactive learning experiences. I am
-                especially interested in the researchers’ integration
-                of design-based research, iterative prototyping,
-                teacher collaboration, and classroom evaluation to
-                address authentic educational needs. Their emphasis
-                on student participation, accessibility, creativity,
-                and contextual relevance demonstrates how thoughtful
-                educational design can transform abstract concepts
-                into meaningful and engaging learning experiences.
-              </p>
-
-              <p>
-                Although situated in English instruction, the study
-                offers valuable methodological insights for Physics
-                Education Research. I see opportunities to extend
-                similar approaches through physical models, interactive
-                simulations, and intelligent learning environments
-                that enable students to visualize abstract physical
-                phenomena, experiment with scientific principles,
-                formulate predictions, and develop deeper conceptual
-                understanding. Particularly compelling is the potential
-                of tangible interaction and experiential learning to
-                help students connect mathematical representations
-                with physical experiences beyond conventional
-                instructional approaches.
-              </p>
-
-              <p>
-                This work reinforces my aspiration to integrate
-                theoretical foundations, design-based inquiry,
-                practical experimentation, interdisciplinary
-                collaboration, and rigorous evidence-based evaluation
-                in my doctoral research. I hope to develop inclusive,
-                engaging, and pedagogically meaningful innovations
-                that transform how students experience, investigate,
-                and understand science.
-              </p>
-
             </div>
-          </article>
+          </details>
 
         </div>
 
-        <p class="sop-footnote">
-          This portfolio presents the applicant’s research interests
-          and proposed direction. All faculty affiliations, publication
-          details, and cited works should be verified before formal submission.
-        </p>
+        <div class="statement-actions">
+          <button
+            type="button"
+            class="button button-secondary"
+            id="expandAll"
+          >
+            Expand all
+          </button>
+
+          <button
+            type="button"
+            class="button button-secondary"
+            id="collapseAll"
+          >
+            Collapse all
+          </button>
+
+          <button
+            type="button"
+            class="button button-primary"
+            id="printPage"
+          >
+            Print / Save as PDF
+          </button>
+        </div>
 
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
 
-      <div class="section-wrap contact-wrap">
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
 
-        <p class="eyebrow">
-          <span class="eyebrow-line"></span>
-          THANK YOU FOR YOUR CONSIDERATION
-        </p>
-
-        <h2>
-          Curiosity is where<br>
-          <em>discovery begins.</em>
-        </h2>
-
-        <p class="contact-copy">
-          I look forward to contributing to interdisciplinary conversations
-          and research that make learning more meaningful, creative,
-          and human-centered.
-        </p>
-
-        <div class="contact-links">
-
-          <!-- Direct LinkedIn link -->
-          <a
-            href="https://www.linkedin.com/in/f-uddin-75b35218/"
-            id="linkedinLink"
-            class="contact-link"
-            target="_blank"
-            rel="noopener noreferrer">
-            LinkedIn profile <span>↗</span>
-          </a>
-
-          <!-- Direct email link -->
-          <a
-            href="mailto:Foize.Uddin@colorado.edu"
-            id="emailLink"
-            class="contact-link">
-            Email <span>↗</span>
-          </a>
-
+        <div class="contact-heading">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Open to academic dialogue and research collaboration.</h2>
         </div>
+
+        <div class="contact-content">
+          <p>
+            I welcome opportunities to discuss research ideas,
+            doctoral supervision, academic collaboration, and
+            related scholarly interests.
+          </p>
+
+          <a
+            class="contact-email"
+            href="mailto:your.email@example.com"
+          >
+            your.email@example.com
+          </a>
+
+          <div class="contact-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              ORCID
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
   </main>
 
+
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="site-footer">
+    <div class="container footer-inner">
 
-    <a class="brand footer-brand" href="#home">
-      <span class="brand-mark">R</span>
-      <span>RESEARCH PORTFOLIO</span>
-    </a>
+      <a href="#home" class="logo footer-logo">
+        ATLAS<span>.</span>
+      </a>
 
-    <span>ATLAS PhD · University of Colorado Boulder</span>
+      <p>
+        Academic Research Portfolio
+        <span id="currentYear"></span>
+      </p>
 
-    <a href="#home">Back to top ↑</a>
+      <a href="#home" class="back-to-top">
+        Back to top ↑
+      </a>
 
+    </div>
   </footer>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
 
 </body>
 </html>
